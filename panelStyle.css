@@ -1,0 +1,242 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+body {
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
+
+}
+
+.mainPanel {
+    border-radius: 10px;
+    background-color: white;
+   padding: 30px 20px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    gap:3%;
+ 
+
+}
+
+.panel
+{  padding: 10px 5px;
+     /* outline: 2px solid red; */
+    min-width:30%;
+}
+
+.panel-head {
+    color: rgb(156, 154, 154);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 40px 0;
+    border-bottom: 1px solid rgb(240, 238, 238);
+}
+
+.panel-prop {
+    color: rgb(39, 123, 208);
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+
+}
+
+.panel-prop-item {
+    line-height: 2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(240, 238, 238);
+
+}
+
+.panel-image {
+max-width: 90%;
+    margin: 10px 30px;
+}
+
+.panel-pricing {
+    color: rgb(39, 123, 208);
+    font-weight: 700;
+    font-size: 25px;
+    padding: 30px 0;
+
+}
+
+
+.panel-button {
+    border: 1px solid rgb(39, 123, 208);
+    text-decoration: none;
+    color: rgb(39, 123, 208);
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: background-color 500ms ease-in-out;
+
+}
+
+.panel-button:hover,
+.panel-button:focus {
+    background-color: rgb(39, 123, 208);
+    color: white;
+   box-shadow: 0.2rem 0.5rem 1rem rgb(192, 192, 192);
+}
+
+@media(max-width:800px) {
+    .mainPanel {
+    flex-direction: column;
+    width: 90%;
+    gap: 2rem;
+
+    }
+
+    .panel
+    
+    {
+    width:80%;
+    margin-left: 10%;
+    }
+
+ 
+
+} 
+
